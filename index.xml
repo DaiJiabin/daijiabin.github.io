@@ -16,9 +16,8 @@
   calculate the Amount of the Plans
   when it&rsquo;s NOT used   specific Plan instead of the Amount of Plans ( Plaindrome Partitioning )
   Input is a Set instead of a Sequence ( Longest Consecutive Sequence )
-  4 Points   State
-  Transform-Function
-  Initialization ( Start )]]></description>
+  4 Points   Defination of States
+  Transform-Function]]></description>
 </item><item>
     <title>Algorithms Devide and Conquer</title>
     <link>https://daijiabin.github.io/algorithms-devide-and-conquer/</link>

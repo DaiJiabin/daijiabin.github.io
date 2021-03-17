@@ -11,9 +11,8 @@
   calculate the Amount of the Plans
   when it&rsquo;s NOT used   specific Plan instead of the Amount of Plans ( Plaindrome Partitioning )
   Input is a Set instead of a Sequence ( Longest Consecutive Sequence )
-  4 Points   State
-  Transform-Function
-  Initialization ( Start )" />
+  4 Points   Defination of States
+  Transform-Function" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daijiabin.github.io/algorithms-dynamic-programming/" />
 <meta property="og:image" content="https://daijiabin.github.io/logo.png"/>
@@ -28,9 +27,8 @@
   calculate the Amount of the Plans
   when it&rsquo;s NOT used   specific Plan instead of the Amount of Plans ( Plaindrome Partitioning )
   Input is a Set instead of a Sequence ( Longest Consecutive Sequence )
-  4 Points   State
-  Transform-Function
-  Initialization ( Start )"/>
+  4 Points   Defination of States
+  Transform-Function"/>
 <meta name="application-name" content="Jiabin&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="Jiabin&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -43,7 +41,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/daijiabin.github.io\/algorithms-dynamic-programming\/"
-        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Algorithms","wordcount":  993 ,
+        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Algorithms","wordcount":  1411 ,
         "url": "https:\/\/daijiabin.github.io\/algorithms-dynamic-programming\/","datePublished": "2021-03-15T09:04:18+01:00","dateModified": "2021-03-15T11:51:52+01:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Dai Jiabin","logo": "https:\/\/daijiabin.github.io\/images\/avatar.png"},"author": {
@@ -97,8 +95,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Algorithms Dynamic Programming</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/DaiJiabin" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dai Jiabin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-15">2021-03-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;993 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-15">2021-03-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1411 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -111,7 +109,16 @@
     <li><a href="#4-points">4 Points</a></li>
     <li><a href="#types-of-dp">Types of DP</a></li>
     <li><a href="#some-tips">Some Tips</a></li>
-    <li><a href="#exercises-on-leetcode">Exercises on LeetCode</a></li>
+    <li><a href="#exercises-on-leetcode">Exercises on LeetCode</a>
+      <ul>
+        <li><a href="#coordinate">Coordinate</a></li>
+        <li><a href="#subsequence">Subsequence</a>
+          <ul>
+            <li><a href="#single">single</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="algorithms-03">Algorithms 03</h1>
@@ -139,7 +146,7 @@
 <h2 id="4-points">4 Points</h2>
 <ol>
 <li>
-<p>State</p>
+<p>Defination of States</p>
 </li>
 <li>
 <p>Transform-Function</p>
@@ -168,6 +175,7 @@
 <li>when initialize a <strong>2D-Matrix, initialize its 1.st Row and 1.st Column</strong>.</li>
 </ul>
 <h2 id="exercises-on-leetcode">Exercises on LeetCode</h2>
+<h3 id="coordinate">Coordinate</h3>
 <ul>
 <li>
 <p><a href="https://leetcode.com/problems/jump-game-ii/" target="_blank" rel="noopener noreffer">LeetCode 45. Jump Game II</a></p>
@@ -597,6 +605,8 @@
 </span><span class="lnt">19
 </span><span class="lnt">20
 </span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
@@ -605,11 +615,13 @@
             <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
           
         <span class="kt">int</span><span class="o">[]</span> <span class="n">f</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">];</span>
-        <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+        <span class="c1">// Array f storages the LIS in i_th Location
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
           
         <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
             <span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
-            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="o">;</span> <span class="n">j</span><span class="o">++){</span>
+            <span class="c1">// the for-loop below picks out the maximum in f[j], j in [0, i)
+</span><span class="c1"></span>            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="o">;</span> <span class="n">j</span><span class="o">++){</span>
                 <span class="k">if</span><span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">])</span>
                     <span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">f</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="n">1</span> <span class="o">?</span> <span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">:</span> <span class="n">f</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="n">1</span><span class="o">;</span>
             <span class="o">}</span>
@@ -618,6 +630,165 @@
         <span class="o">}</span>
           
         <span class="k">return</span> <span class="n">max</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h3 id="subsequence">Subsequence</h3>
+<h4 id="single">single</h4>
+<ol>
+<li>
+<p>State: f[i] represents Alphabets / Numbers / Locations <strong>before</strong> i ( different from LIS, ont i_th )</p>
+</li>
+<li>
+<p>Function: f[i] = f[j]&hellip;( j &lt; i )</p>
+</li>
+<li>
+<p>Initialization: f[0]&hellip;</p>
+</li>
+<li>
+<p>Answer: f[n - 1]&hellip;</p>
+</li>
+</ol>
+<ul>
+<li>
+<p><a href="https://leetcode.com/problems/palindrome-partitioning-ii/" target="_blank" rel="noopener noreffer">LeetCode 132. Palindrome Partitioning II (HARD)</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+  
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="nf">isPalindrome</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">,</span> <span class="kt">int</span> <span class="n">start</span><span class="o">,</span> <span class="kt">int</span> <span class="n">end</span><span class="o">){</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">start</span><span class="o">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">end</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="o">;</span> <span class="n">i</span><span class="o">++,</span> <span class="n">j</span><span class="o">--){</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">!=</span> <span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">j</span><span class="o">))</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+      
+    <span class="kd">private</span> <span class="kt">boolean</span><span class="o">[][]</span> <span class="nf">getIsPalindrome</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">){</span>
+        <span class="c1">// this Function is DP, too
+</span><span class="c1"></span>        <span class="c1">// DP-Type: subArea
+</span><span class="c1"></span>        <span class="kt">boolean</span> <span class="o">[][]</span> <span class="n">isPalindrome</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()][</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()];</span>
+          
+        <span class="c1">// single Alphabet is palindrom
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span>
+            <span class="n">isPalindrome</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="c1">// judge if every 2 Alphabets are palindrom
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span>
+            <span class="n">isPalindrome</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">i</span> <span class="o">+</span> <span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">1</span><span class="o">));</span>
+          
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">length</span> <span class="o">=</span> <span class="n">2</span><span class="o">;</span> <span class="n">length</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">length</span><span class="o">++){</span>
+            <span class="c1">// Length of subArea
+</span><span class="c1"></span>            <span class="c1">// f[i][j] depends on f[i + 1][j - 1]
+</span><span class="c1"></span>            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">start</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">start</span> <span class="o">+</span> <span class="n">length</span> <span class="o">&lt;</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">start</span><span class="o">++){</span>
+                <span class="n">isPalindrome</span><span class="o">[</span><span class="n">start</span><span class="o">][</span><span class="n">start</span> <span class="o">+</span> <span class="n">length</span><span class="o">]</span> <span class="o">=</span> 
+                    <span class="n">isPalindrome</span><span class="o">[</span><span class="n">start</span> <span class="o">+</span> <span class="n">1</span><span class="o">][</span><span class="n">start</span> <span class="o">+</span> <span class="n">length</span> <span class="o">-</span> <span class="n">1</span><span class="o">]</span> 
+                    <span class="o">&amp;&amp;</span> <span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">start</span><span class="o">)</span> <span class="o">==</span> <span class="n">s</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">start</span> <span class="o">+</span> <span class="n">length</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+          
+        <span class="k">return</span> <span class="n">isPalindrome</span><span class="o">;</span>
+    <span class="o">}</span>
+      
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">minCut</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">s</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">==</span> <span class="n">0</span><span class="o">)</span>
+            <span class="k">return</span> <span class="n">0</span><span class="o">;</span>
+        <span class="kt">boolean</span><span class="o">[][]</span> <span class="n">isPalindrome</span> <span class="o">=</span> <span class="n">getIsPalindrome</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+          
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">f</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">+</span> <span class="n">1</span><span class="o">];</span>
+          
+        <span class="c1">// Initialization
+</span><span class="c1"></span>        <span class="c1">// worst Case: we seperate a String into single Alphabet.
+</span><span class="c1"></span>        <span class="c1">// we have 5 Fingers and 4 Gaps among them
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span>
+            <span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span>
+        <span class="c1">// but why f[0] = -1?
+</span><span class="c1"></span>        <span class="c1">// Case &#34;abba&#34;
+</span><span class="c1"></span>          
+        <span class="c1">// DP below
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span> <span class="n">i</span><span class="o">++){</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="o">;</span> <span class="n">j</span><span class="o">++){</span>
+                <span class="c1">// if subString(j, i-1) is palindrom.
+</span><span class="c1"></span>                <span class="c1">// (j+1)_th to i_th subString.
+</span><span class="c1"></span>                <span class="k">if</span><span class="o">(</span><span class="n">isPalindrome</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">i</span> <span class="o">-</span> <span class="n">1</span><span class="o">])</span>
+                    <span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">min</span><span class="o">(</span><span class="n">f</span><span class="o">[</span><span class="n">i</span><span class="o">],</span> <span class="n">f</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="n">1</span><span class="o">);</span>
+                <span class="c1">// we can also write it this way:
+</span><span class="c1"></span>                <span class="c1">// if(isPalindrome(s, j, i - 1))
+</span><span class="c1"></span>                <span class="c1">// by using 2D-Matrix we optimize the Complexity to O(1).
+</span><span class="c1"></span>            <span class="o">}</span>
+        <span class="o">}</span>
+          
+        <span class="k">return</span> <span class="n">f</span><span class="o">[</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()];</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></td></tr></table>
