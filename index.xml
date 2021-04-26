@@ -3,9 +3,16 @@
         <title>Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 15 Mar 2021 09:04:18 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Apr 2021 16:38:33 &#43;0200</lastBuildDate>
             <atom:link href="https://daijiabin.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Haupt Seminar</title>
+    <link>https://daijiabin.github.io/haupt-seminar/</link>
+    <pubDate>Mon, 26 Apr 2021 16:38:33 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/haupt-seminar/</guid>
+    <description><![CDATA[This is just a Begin. Learn Fucking Hard, Play Fucking High. Please, display. ]]></description>
+</item><item>
     <title>Algorithms Dynamic Programming</title>
     <link>https://daijiabin.github.io/algorithms-dynamic-programming/</link>
     <pubDate>Mon, 15 Mar 2021 09:04:18 &#43;0100</pubDate>
@@ -106,14 +113,5 @@ A System that connects distributed and independent Computer Systems through Devi
 Creation, Attributes-Given and Management of the Relationships of Objects.
   Inversion:
 Transfer the Rights of Management, Creation of Objects to the Containers ( here: Spring ) beyond Codes.]]></description>
-</item><item>
-    <title>Java Learning</title>
-    <link>https://daijiabin.github.io/java-learning/</link>
-    <pubDate>Wed, 03 Feb 2021 19:14:56 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://daijiabin.github.io/java-learning/</guid>
-    <description><![CDATA[Java Learning ( Data Structures, mostly ) &hellip; And the greatest reason I learn it, is that I LOVE COFFEE ☕ its DS are soooooooooooo smoooooooth.
-01. Basic Usage in Java Way to write   A .java File can be compiled through javac into .class File. .java File is called Source Code, after Compling it can be deleted.
-  In every .java File can multiple Class be written. In every Class can multiple Methods be written.]]></description>
 </item></channel>
 </rss>
