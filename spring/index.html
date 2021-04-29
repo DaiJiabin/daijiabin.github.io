@@ -6,11 +6,12 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Spring - Jiabin&#39;s Blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Spring" />
-<meta property="og:description" content="Spring Notes Day 01. Basic Concepts  Kernel Techs: IoC(Inversion of Control) and aop. Loose the Relationships between Modules.  IoC ( Inversion of Control )   Creation, Value-Given and Management belong to the Containers beyond Codes.
-  Management:
-Creation, Attributes-Given and Management of the Relationships of Objects.
-  Inversion:
-Transfer the Rights of Management, Creation of Objects to the Containers ( here: Spring ) beyond Codes." />
+<meta property="og:description" content="1. Overview  Learn from online platform bilibili.  1.1 Intro   Based on interface21, 1.0 version published in 2014.
+  Creator Rod Johson
+  Aims at figuring out the complexity of the development for enterprise applications, by integrating the current techs to make them easier to use.
+  Ingredients:
+  SSH: Struct2 &#43; Spring &#43; Hibernate
+  SSM: SpringMVC &#43; Spring &#43; Mybatis" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://daijiabin.github.io/spring/" /><meta property="og:image" content="https://daijiabin.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-19T20:14:05&#43;01:00" />
@@ -20,11 +21,12 @@ Transfer the Rights of Management, Creation of Objects to the Containers ( here:
 <meta name="twitter:image" content="https://daijiabin.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Spring"/>
-<meta name="twitter:description" content="Spring Notes Day 01. Basic Concepts  Kernel Techs: IoC(Inversion of Control) and aop. Loose the Relationships between Modules.  IoC ( Inversion of Control )   Creation, Value-Given and Management belong to the Containers beyond Codes.
-  Management:
-Creation, Attributes-Given and Management of the Relationships of Objects.
-  Inversion:
-Transfer the Rights of Management, Creation of Objects to the Containers ( here: Spring ) beyond Codes."/>
+<meta name="twitter:description" content="1. Overview  Learn from online platform bilibili.  1.1 Intro   Based on interface21, 1.0 version published in 2014.
+  Creator Rod Johson
+  Aims at figuring out the complexity of the development for enterprise applications, by integrating the current techs to make them easier to use.
+  Ingredients:
+  SSH: Struct2 &#43; Spring &#43; Hibernate
+  SSM: SpringMVC &#43; Spring &#43; Mybatis"/>
 <meta name="application-name" content="Jiabin&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="Jiabin&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -37,7 +39,7 @@ Transfer the Rights of Management, Creation of Objects to the Containers ( here:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/daijiabin.github.io\/spring\/"
-        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Framework","wordcount":  103 ,
+        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Framework","wordcount":  136 ,
         "url": "https:\/\/daijiabin.github.io\/spring\/","datePublished": "2021-02-19T20:14:05+01:00","dateModified": "2021-03-01T12:07:00+01:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Dai Jiabin","logo": "https:\/\/daijiabin.github.io\/images\/avatar.png"},"author": {
@@ -91,7 +93,7 @@ Transfer the Rights of Management, Creation of Objects to the Containers ( here:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Spring</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/DaiJiabin" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dai Jiabin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/learn/"><i class="far fa-folder fa-fw"></i>Learn</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-19">2021-02-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;103 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-19">2021-02-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;136 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;<span id="/spring/" class="leancloud_visitors" data-flag-title="Spring">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
@@ -102,40 +104,120 @@ Transfer the Rights of Management, Creation of Objects to the Containers ( here:
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#day-01-basic-concepts">Day 01. Basic Concepts</a>
+    <li><a href="#1-overview">1. Overview</a>
       <ul>
-        <li><a href="#ioc--inversion-of-control-">IoC ( Inversion of Control )</a></li>
+        <li><a href="#11-intro">1.1 Intro</a></li>
+        <li><a href="#12-advantages">1.2 Advantages</a></li>
+        <li><a href="#13-composition">1.3 Composition</a></li>
       </ul>
     </li>
+    <li><a href="#2-ioc-theory">2. IOC theory</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="spring-notes">Spring Notes</h1>
-<h2 id="day-01-basic-concepts">Day 01. Basic Concepts</h2>
+            </div><div class="content" id="content"><h2 id="1-overview">1. Overview</h2>
 <ul>
-<li>Kernel Techs: <strong>IoC(Inversion of Control)</strong> and <strong>aop.</strong> Loose the Relationships between Modules.</li>
+<li>Learn from online platform <a href="https://www.bilibili.com/video/BV1WE411d7Dv?from=search&amp;seid=2004341521107708627" target="_blank" rel="noopener noreffer">bilibili</a>.</li>
 </ul>
-<h3 id="ioc--inversion-of-control-">IoC ( Inversion of Control )</h3>
+<h3 id="11-intro">1.1 Intro</h3>
 <ul>
 <li>
-<p>Creation, Value-Given and Management belong to the <strong>Containers beyond Codes.</strong></p>
+<p>Based on <a href="https://www.interface21.io/" target="_blank" rel="noopener noreffer">interface21</a>, 1.0 version published in 2014.</p>
 </li>
 <li>
-<p>Management:</p>
-<p>Creation, Attributes-Given and Management of the Relationships of Objects.</p>
+<p>Creator <a href="https://en.wikipedia.org/wiki/Rod_Johnson_%28programmer%29" target="_blank" rel="noopener noreffer">Rod Johson</a></p>
 </li>
 <li>
-<p>Inversion:</p>
-<p>Transfer the Rights of Management, Creation of Objects  to the Containers ( here: Spring ) beyond Codes.</p>
+<p>Aims at figuring out the complexity of the development for enterprise applications, by integrating the current techs to make them easier to use.</p>
 </li>
 <li>
-<p>WHY IoC:</p>
-<p>We&rsquo;re LAZY. This can make the Management of Objects easier.</p>
+<p>Ingredients:</p>
+<ul>
+<li>
+<p>SSH: Struct2 + Spring + Hibernate</p>
 </li>
 <li>
-<p><strong>DI ( Dependency Injection ): Technic Realization</strong></p>
-<p>Offer the Object&rsquo;s Name only, no need to care how it&rsquo;s created, value given and search, etc. <strong>In Spring, Reflection is used.</strong></p>
+<p>SSM: SpringMVC + Spring + Mybatis</p>
 </li>
 </ul>
+</li>
+</ul>
+<h3 id="12-advantages">1.2 Advantages</h3>
+<ul>
+<li>
+<p>Open source, free framework</p>
+</li>
+<li>
+<p><strong>Light</strong>, uninvisioned framework</p>
+</li>
+<li>
+<p><strong>IOC(Inversion Of Control), AOP(Aspect Oriented Programming)</strong></p>
+</li>
+<li>
+<p>Supports the process of events and integration of frameworks</p>
+</li>
+</ul>
+<h3 id="13-composition">1.3 Composition</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/composition_of_spring.jpg"
+        data-srcset="/composition_of_spring.jpg, /composition_of_spring.jpg 1.5x, /composition_of_spring.jpg 2x"
+        data-sizes="auto"
+        alt="/composition_of_spring.jpg"
+        title="composition_of_spring" /></p>
+<ul>
+<li>
+<p>Spring Boot</p>
+<ul>
+<li>
+<p>Scaffload for quick development</p>
+</li>
+<li>
+<p>Quick single micro servive development</p>
+</li>
+<li>
+<p>Coordination is more important than configuration</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Spring Cloud</p>
+<ul>
+<li>Based on Spring Boot</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-webmvc<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>5.3.6<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+<span class="c">&lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-jdbc<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>5.3.6<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="2-ioc-theory">2. IOC theory</h2>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

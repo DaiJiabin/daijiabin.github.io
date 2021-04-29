@@ -9,10 +9,11 @@
     <pubDate>Fri, 19 Feb 2021 20:14:05 &#43;0100</pubDate>
     <author>Author</author>
     <guid>https://daijiabin.github.io/spring/</guid>
-    <description><![CDATA[Spring Notes Day 01. Basic Concepts  Kernel Techs: IoC(Inversion of Control) and aop. Loose the Relationships between Modules.  IoC ( Inversion of Control )   Creation, Value-Given and Management belong to the Containers beyond Codes.
-  Management:
-Creation, Attributes-Given and Management of the Relationships of Objects.
-  Inversion:
-Transfer the Rights of Management, Creation of Objects to the Containers ( here: Spring ) beyond Codes.]]></description>
+    <description><![CDATA[1. Overview  Learn from online platform bilibili.  1.1 Intro   Based on interface21, 1.0 version published in 2014.
+  Creator Rod Johson
+  Aims at figuring out the complexity of the development for enterprise applications, by integrating the current techs to make them easier to use.
+  Ingredients:
+  SSH: Struct2 + Spring + Hibernate
+  SSM: SpringMVC + Spring + Mybatis]]></description>
 </item></channel>
 </rss>

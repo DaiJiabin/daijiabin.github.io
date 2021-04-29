@@ -18,7 +18,7 @@
     <pubDate>Mon, 26 Apr 2021 17:19:52 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://daijiabin.github.io/note2021/</guid>
-    <description><![CDATA[Try to write some Notes here.  Not FREE.   Two threads will never enter the critical section at the same time(mutual exclusion) - safety If two threads try to enter critical section, eventually one of them will succeed - Liveness  ]]></description>
+    <description><![CDATA[Try to write some Notes here  Not FREE.   Two threads will never enter the critical section at the same time(mutual exclusion) - safety If two threads try to enter critical section, eventually one of them will succeed - Liveness  ]]></description>
 </item><item>
     <title>Haupt Seminar</title>
     <link>https://daijiabin.github.io/haupt-seminar/</link>
