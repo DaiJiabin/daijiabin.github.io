@@ -3,7 +3,14 @@
         <title>All Posts - Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/posts/</link>
         <description>All Posts | Jiabin&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 26 Apr 2021 17:19:52 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Apr 2021 08:25:14 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Git Learn</title>
+    <link>https://daijiabin.github.io/git-learn/</link>
+    <pubDate>Thu, 29 Apr 2021 08:25:14 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/git-learn/</guid>
+    <description><![CDATA[Git Notes ]]></description>
+</item><item>
     <title>Note2021</title>
     <link>https://daijiabin.github.io/note2021/</link>
     <pubDate>Mon, 26 Apr 2021 17:19:52 &#43;0200</pubDate>
@@ -98,16 +105,5 @@
     <author>Author</author>
     <guid>https://daijiabin.github.io/operating-system/</guid>
     <description><![CDATA[Operating System ]]></description>
-</item><item>
-    <title>Computer Networks</title>
-    <link>https://daijiabin.github.io/computer-networks/</link>
-    <pubDate>Mon, 22 Feb 2021 10:50:46 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://daijiabin.github.io/computer-networks/</guid>
-    <description><![CDATA[Computer Networks   Foreword:
-References:
- Videos: 2021王道计算机网络 on YouTube eBook: Google Drive Link here (Chinese)  Power Point: Google Drive Link here (Chinese)     Ch 01. System&rsquo;s Structure of Computer Networks   Definition:
-A System that connects distributed and independent Computer Systems through Devices and Cables, therefore the Resources-Sharing and Information-Transportation are realized. It&rsquo;s a Combination of connected and independent Computers.
-  Functions:]]></description>
 </item></channel>
 </rss>

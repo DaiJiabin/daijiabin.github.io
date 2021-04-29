@@ -5,14 +5,5 @@
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 13 Mar 2021 11:22:24 &#43;0100</lastBuildDate>
             <atom:link href="https://daijiabin.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-        <item>
-    <title>Machine Learning</title>
-    <link>https://daijiabin.github.io/zh-cn/machine-learning/</link>
-    <pubDate>Fri, 18 Dec 2020 19:11:53 &#43;0100</pubDate>
-    <author>作者</author>
-    <guid>https://daijiabin.github.io/zh-cn/machine-learning/</guid>
-    <description><![CDATA[Lecture by Andrew Ng, Coursera Week 1 Supervised Learning vs. Unsupervised Learning   Supervised Learning:
- In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
-   Training Data already has the value, which our Function should predict for a new, strange input. i.e, In the case below, we want to get a function, so that we can calculate the price of a house to be sold.]]></description>
-</item></channel>
+        </channel>
 </rss>
