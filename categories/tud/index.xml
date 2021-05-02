@@ -3,13 +3,20 @@
         <title>TUD - Category - Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/categories/tud/</link>
         <description>TUD - Category - Jiabin&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 May 2021 09:13:09 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/categories/tud/" rel="self" type="application/rss+xml" /><item>
-    <title>ASiSE 03. ADED</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 May 2021 15:50:34 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/categories/tud/" rel="self" type="application/rss+xml" /><item>
+    <title>Software Fault Tolerance</title>
+    <link>https://daijiabin.github.io/sft/</link>
+    <pubDate>Sun, 02 May 2021 15:50:34 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/sft/</guid>
+    <description><![CDATA[03. Fuzzing Definition  A way to discover bugs in software by providing randomised inputs to programs to find test cases that cause a crash  Goal  Find crashes Find abnormal behavior Find security vulnerabilities  Testing variants Positive testing  Test features  Negative testing  Test if the system does things it is not supposed to do Fuzzing belongs to negative testing  Fuzzing vs. Random testing  Random testing is a simple version of fuzzing Problem of random testing: Coverage increases slowly Fuzzing: try to generate test cases in a smarter, more efficient way  Components 1.]]></description>
+</item><item>
+    <title>ASiSE</title>
     <link>https://daijiabin.github.io/asise/</link>
     <pubDate>Sun, 02 May 2021 09:13:09 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://daijiabin.github.io/asise/</guid>
-    <description><![CDATA[What is ADED  A nalyse  role: existing technologies, backgrounds, problems   D esign  role: new technologies   E valuate  necessary for technical papers a technical thesis must be technical( achieve and demonstrate a technical result ) success factors have to be analyzed to know whether a result is really needed role: show why the new solution is superior; use success cretiria   D iffuse  by writing: a design pattern, a report by demonstrating a software prototype role: popularize the research results; demonstration for creating vision    Tasks for each    Analyse Design Evaluate(Role?]]></description>
+    <description><![CDATA[03. ADED What is ADED  A nalyse  role: existing technologies, backgrounds, problems   D esign  role: new technologies   E valuate  necessary for technical papers a technical thesis must be technical( achieve and demonstrate a technical result ) success factors have to be analyzed to know whether a result is really needed role: show why the new solution is superior; use success cretiria   D iffuse  by writing: a design pattern, a report by demonstrating a software prototype role: popularize the research results; demonstration for creating vision    Tasks for each    Analyse Design Evaluate(Role?]]></description>
 </item><item>
     <title>Note2021</title>
     <link>https://daijiabin.github.io/note2021/</link>
