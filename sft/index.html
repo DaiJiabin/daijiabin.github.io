@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/daijiabin.github.io\/sft\/"
-        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Kurse","wordcount":  274 ,
+        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Kurse","wordcount":  399 ,
         "url": "https:\/\/daijiabin.github.io\/sft\/","datePublished": "2021-05-02T15:50:34+02:00","dateModified": "2021-05-02T21:24:53+02:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Dai Jiabin","logo": "https:\/\/daijiabin.github.io\/images\/avatar.png"},"author": {
@@ -80,10 +80,10 @@
                 <div class="container">
                     <div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Software Fault Tolerance</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/DaiJiabin" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dai Jiabin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/tud/"><i class="far fa-folder fa-fw"></i>TUD</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-02">2021-05-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;274 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-02">2021-05-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;399 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/sft/" class="leancloud_visitors" data-flag-title="Software Fault Tolerance">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
@@ -109,7 +109,7 @@
           <ul>
             <li><a href="#1-generator">1. Generator</a>
               <ul>
-                <li><a href="#11-tasks">1.1 Tasks</a></li>
+                <li><a href="#11-objective">1.1 Objective</a></li>
                 <li><a href="#12-types">1.2 Types</a>
                   <ul>
                     <li><a href="#mutative-generator">Mutative generator</a></li>
@@ -127,10 +127,34 @@
                 </li>
               </ul>
             </li>
-            <li><a href="#2-delivery-machanism">2. Delivery machanism</a></li>
-            <li><a href="#3-monitoring-system">3. Monitoring system</a></li>
+            <li><a href="#2-delivery-machanism">2. Delivery machanism</a>
+              <ul>
+                <li><a href="#21-objective">2.1 Objective</a></li>
+                <li><a href="#22-mechanisms">2.2 Mechanisms</a></li>
+              </ul>
+            </li>
+            <li><a href="#3-monitoring-system">3. Monitoring system</a>
+              <ul>
+                <li><a href="#31-objective">3.1 Objective</a></li>
+                <li><a href="#32-types">3.2 Types</a></li>
+              </ul>
+            </li>
+            <li><a href="#fuzzing-workflow">Fuzzing workflow</a></li>
+            <li><a href="#fuzzer-types--crash-detection">Fuzzer types &amp; crash detection</a>
+              <ul>
+                <li><a href="#fuzzer-types">Fuzzer types</a></li>
+                <li><a href="#crash-dectection">Crash dectection</a></li>
+              </ul>
+            </li>
+            <li><a href="#summary">Summary</a>
+              <ul>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#drawbacks">Drawbacks</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
+        <li><a href="#tls-attacker---fuzzing-application">TLS Attacker - fuzzing application</a></li>
       </ul>
     </li>
   </ul>
@@ -164,9 +188,9 @@
 </ul>
 <h3 id="components">Components</h3>
 <h4 id="1-generator">1. Generator</h4>
-<h5 id="11-tasks">1.1 Tasks</h5>
+<h5 id="11-objective">1.1 Objective</h5>
 <ul>
-<li>Testing inputs to drive SUT</li>
+<li>Testing inputs to drive SUT(System Under Test)</li>
 <li>Different approaches on how to generate the input</li>
 </ul>
 <h5 id="12-types">1.2 Types</h5>
@@ -211,15 +235,85 @@
 <li>Protocol description, not only grammar</li>
 </ul>
 <h4 id="2-delivery-machanism">2. Delivery machanism</h4>
+<h5 id="21-objective">2.1 Objective</h5>
 <ul>
-<li>Presents the output of the fuzz generator as input to the SUT</li>
-<li>i.e., file, mouse, etc.</li>
+<li>Taking test case and presenting it to the SUTile / Presents the output of the fuzz generator as input to the SUT</li>
+</ul>
+<h5 id="22-mechanisms">2.2 Mechanisms</h5>
+<ul>
+<li>Environment Variables</li>
+<li>Invocation Parameters(e.g. command line and API parameters)</li>
+<li>Network Messages</li>
+<li>Operating System Events(mouse/keyboard events)</li>
 </ul>
 <h4 id="3-monitoring-system">3. Monitoring system</h4>
+<h5 id="31-objective">3.1 Objective</h5>
 <ul>
-<li>Observing the SUT and detection of errors that arise as input is presented</li>
+<li>Error detection system, <strong>often combined with fuzz generator to know what input triggered which error condition</strong></li>
 </ul>
-<p>###</p>
+<h5 id="32-types">3.2 Types</h5>
+<ul>
+<li>
+<p>Local monitoring systems</p>
+</li>
+<li>
+<p>Remote monitoring systems</p>
+</li>
+</ul>
+<h4 id="fuzzing-workflow">Fuzzing workflow</h4>
+<ol>
+<li>
+<p>Identify the target</p>
+</li>
+<li>
+<p>Write/prepare the fuzzing driver(delivery)</p>
+</li>
+<li>
+<p>Set up data generator</p>
+<ul>
+<li>
+<p>grammar-based: write grammar</p>
+</li>
+<li>
+<p>mutation-based: prepare seed inputs</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Set up monitoring</p>
+</li>
+<li>
+<p>After fuzzing, analyze results and fix bugs</p>
+</li>
+</ol>
+<h4 id="fuzzer-types--crash-detection">Fuzzer types &amp; crash detection</h4>
+<h5 id="fuzzer-types">Fuzzer types</h5>
+<ul>
+<li>Blackbox fuzzer - system runs or crashed</li>
+<li>Whitebox fuzzer - access to source code to debug</li>
+<li>Greybox fuzzer - some binary instrumentation</li>
+</ul>
+<h5 id="crash-dectection">Crash dectection</h5>
+<h4 id="summary">Summary</h4>
+<h5 id="benefits">Benefits</h5>
+<ul>
+<li>
+<p>Simple way to test application in unexpected ways</p>
+</li>
+<li>
+<p>Cheaper than manual testing</p>
+</li>
+</ul>
+<h5 id="drawbacks">Drawbacks</h5>
+<ul>
+<li>
+<p>Never exhaustive</p>
+</li>
+<li>
+<p>Long testing time</p>
+</li>
+</ul>
+<h3 id="tls-attacker---fuzzing-application">TLS Attacker - fuzzing application</h3>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
