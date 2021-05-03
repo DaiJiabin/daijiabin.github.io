@@ -3,9 +3,38 @@
         <title>Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 May 2021 15:50:34 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 03 May 2021 09:09:13 &#43;0200</lastBuildDate>
             <atom:link href="https://daijiabin.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Japanese</title>
+    <link>https://daijiabin.github.io/japanese/</link>
+    <pubDate>Mon, 03 May 2021 09:09:13 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/japanese/</guid>
+    <description><![CDATA[にほんご， ダイ　ヂアビン 1. こんいちは   あなたは　どうしますか。
+  おはよう　ございます。
+  こんにちは。
+  こんばんは。
+  さようなら。
+じゃあ，また。
+  ありがとうございます。
+いいえ。
+  すみません。
+いいえ。
+  おさきに　しつれいします。
+おつかれさまでした。
+  2. もおいちど　おねがいします   いますか。
+はい，います。
+いいえ，いません。
+いいえ，まだです。
+  じゅぎょうを　はじめます。
+じゅぎょを　おわります。
+  わかりました。
+わかりません。
+  もおいちど　おねがいします。
+もおすこし　ゆっくり　いって　ください。
+  せんせえ，“きょうしつ”って　どういう　いみですが。]]></description>
+</item><item>
     <title>Software Fault Tolerance</title>
     <link>https://daijiabin.github.io/sft/</link>
     <pubDate>Sun, 02 May 2021 15:50:34 &#43;0200</pubDate>
@@ -93,19 +122,5 @@
   Software Fault Tolerance (2/2/0)
   Distributed Operating Systems (2/1/0)
   Wireless Sensor Networks (2/2/0)]]></description>
-</item><item>
-    <title>Idea Tools</title>
-    <link>https://daijiabin.github.io/idea-tools/</link>
-    <pubDate>Fri, 05 Mar 2021 07:20:12 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://daijiabin.github.io/idea-tools/</guid>
-    <description><![CDATA[Idea Tools - IntelliJ ShortCuts   psvm $\rarr$ public static void main(String[] args){}
-  sout $\rarr$ System.out.println()
-  CTRL + y $\rarr$ delete a row
-  ALT + Insert $\rarr$ add Something new
-  CTRL + SHIFT + F12 $\rarr$ close Side-Window
-  ALT +  $\rarr$ || $\larr$ change the Tab
-  ALT + \text{number} change Windows
-  CTRL + p remind Parameters in Functions]]></description>
 </item></channel>
 </rss>

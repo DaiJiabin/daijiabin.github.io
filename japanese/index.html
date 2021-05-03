@@ -5,32 +5,76 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Software Fault Tolerance - Jiabin&#39;s Blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Software Fault Tolerance" />
-<meta property="og:description" content="03. Fuzzing Definition  A way to discover bugs in software by providing randomised inputs to programs to find test cases that cause a crash  Goal  Find crashes Find abnormal behavior Find security vulnerabilities  Testing variants Positive testing  Test features  Negative testing  Test if the system does things it is not supposed to do Fuzzing belongs to negative testing  Fuzzing vs. Random testing  Random testing is a simple version of fuzzing Problem of random testing: Coverage increases slowly Fuzzing: try to generate test cases in a smarter, more efficient way  Components 1." />
+        <title>Japanese - Jiabin&#39;s Blog</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Japanese" />
+<meta property="og:description" content="にほんご， ダイ　ヂアビン 1. こんいちは   あなたは　どうしますか。
+  おはよう　ございます。
+  こんにちは。
+  こんばんは。
+  さようなら。
+じゃあ，また。
+  ありがとうございます。
+いいえ。
+  すみません。
+いいえ。
+  おさきに　しつれいします。
+おつかれさまでした。
+  2. もおいちど　おねがいします   いますか。
+はい，います。
+いいえ，いません。
+いいえ，まだです。
+  じゅぎょうを　はじめます。
+じゅぎょを　おわります。
+  わかりました。
+わかりません。
+  もおいちど　おねがいします。
+もおすこし　ゆっくり　いって　ください。
+  せんせえ，“きょうしつ”って　どういう　いみですが。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://daijiabin.github.io/sft/" /><meta property="og:image" content="https://daijiabin.github.io/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-02T15:50:34&#43;02:00" />
-<meta property="article:modified_time" content="2021-05-02T21:24:53&#43;02:00" />
+<meta property="og:url" content="https://daijiabin.github.io/japanese/" /><meta property="og:image" content="https://daijiabin.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-03T09:09:13&#43;02:00" />
+<meta property="article:modified_time" content="2021-05-03T09:09:13&#43;02:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://daijiabin.github.io/logo.png"/>
 
-<meta name="twitter:title" content="Software Fault Tolerance"/>
-<meta name="twitter:description" content="03. Fuzzing Definition  A way to discover bugs in software by providing randomised inputs to programs to find test cases that cause a crash  Goal  Find crashes Find abnormal behavior Find security vulnerabilities  Testing variants Positive testing  Test features  Negative testing  Test if the system does things it is not supposed to do Fuzzing belongs to negative testing  Fuzzing vs. Random testing  Random testing is a simple version of fuzzing Problem of random testing: Coverage increases slowly Fuzzing: try to generate test cases in a smarter, more efficient way  Components 1."/>
+<meta name="twitter:title" content="Japanese"/>
+<meta name="twitter:description" content="にほんご， ダイ　ヂアビン 1. こんいちは   あなたは　どうしますか。
+  おはよう　ございます。
+  こんにちは。
+  こんばんは。
+  さようなら。
+じゃあ，また。
+  ありがとうございます。
+いいえ。
+  すみません。
+いいえ。
+  おさきに　しつれいします。
+おつかれさまでした。
+  2. もおいちど　おねがいします   いますか。
+はい，います。
+いいえ，いません。
+いいえ，まだです。
+  じゅぎょうを　はじめます。
+じゅぎょを　おわります。
+  わかりました。
+わかりません。
+  もおいちど　おねがいします。
+もおすこし　ゆっくり　いって　ください。
+  せんせえ，“きょうしつ”って　どういう　いみですが。"/>
 <meta name="application-name" content="Jiabin&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="Jiabin&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://daijiabin.github.io/sft/" /><link rel="prev" href="https://daijiabin.github.io/asise/" /><link rel="next" href="https://daijiabin.github.io/japanese/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://daijiabin.github.io/japanese/" /><link rel="prev" href="https://daijiabin.github.io/sft/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Software Fault Tolerance",
+        "headline": "Japanese",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/daijiabin.github.io\/sft\/"
-        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Kurse","wordcount":  274 ,
-        "url": "https:\/\/daijiabin.github.io\/sft\/","datePublished": "2021-05-02T15:50:34+02:00","dateModified": "2021-05-02T21:24:53+02:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/daijiabin.github.io\/japanese\/"
+        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Tapanese","wordcount":  49 ,
+        "url": "https:\/\/daijiabin.github.io\/japanese\/","datePublished": "2021-05-03T09:09:13+02:00","dateModified": "2021-05-03T09:09:13+02:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Dai Jiabin","logo": "https:\/\/daijiabin.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
@@ -66,7 +110,7 @@
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/search/" title=""><i class='fas fa-fw fa-search'></i>Search</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/sft/" selected>English</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/japanese/" selected>English</option></select>
                 </a></div>
     </div>
 </header>
@@ -81,10 +125,10 @@
                     <div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Software Fault Tolerance</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/DaiJiabin" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dai Jiabin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/tud/"><i class="far fa-folder fa-fw"></i>TUD</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-02">2021-05-02</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;274 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/sft/" class="leancloud_visitors" data-flag-title="Software Fault Tolerance">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Japanese</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/DaiJiabin" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dai Jiabin</a></span>&nbsp;<span class="post-category">included in <a href="/categories/language/"><i class="far fa-folder fa-fw"></i>Language</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-03">2021-05-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;49 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;<span id="/japanese/" class="leancloud_visitors" data-flag-title="Japanese">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -94,158 +138,102 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#03-fuzzinghttpsenwikipediaorgwikifuzzing">03. <a href="https://en.wikipedia.org/wiki/Fuzzing">Fuzzing</a></a>
+    <li><a href="#にほんご-ダイヂアビン">にほんご， ダイ　ヂアビン</a>
       <ul>
-        <li><a href="#definition">Definition</a></li>
-        <li><a href="#goal">Goal</a></li>
-        <li><a href="#testing-variants">Testing variants</a>
-          <ul>
-            <li><a href="#positive-testing">Positive testing</a></li>
-            <li><a href="#negative-testing">Negative testing</a></li>
-          </ul>
-        </li>
-        <li><a href="#fuzzing-vs-random-testing">Fuzzing vs. Random testing</a></li>
-        <li><a href="#components">Components</a>
-          <ul>
-            <li><a href="#1-generator">1. Generator</a>
-              <ul>
-                <li><a href="#11-tasks">1.1 Tasks</a></li>
-                <li><a href="#12-types">1.2 Types</a>
-                  <ul>
-                    <li><a href="#mutative-generator">Mutative generator</a></li>
-                    <li><a href="#generative-generator">Generative generator</a></li>
-                  </ul>
-                </li>
-                <li><a href="#13-different-production-approach">1.3 Different production approach</a>
-                  <ul>
-                    <li><a href="#oblivious-fuzzer">Oblivious fuzzer</a></li>
-                    <li><a href="#template-based">Template based</a></li>
-                    <li><a href="#block-based">Block based</a></li>
-                    <li><a href="#grammer-based">Grammer based</a></li>
-                    <li><a href="#protocol-fuzzers">Protocol fuzzers</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#2-delivery-machanism">2. Delivery machanism</a></li>
-            <li><a href="#3-monitoring-system">3. Monitoring system</a></li>
-          </ul>
-        </li>
+        <li><a href="#1-こんいちは">1. こんいちは</a></li>
+        <li><a href="#2-もおいちどおねがいします">2. もおいちど　おねがいします</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="03-fuzzinghttpsenwikipediaorgwikifuzzing">03. <a href="https://en.wikipedia.org/wiki/Fuzzing" target="_blank" rel="noopener noreffer">Fuzzing</a></h2>
-<h3 id="definition">Definition</h3>
+            </div><div class="content" id="content"><h2 id="にほんご-ダイヂアビン">にほんご， ダイ　ヂアビン</h2>
+<h3 id="1-こんいちは">1. こんいちは</h3>
 <ul>
-<li>A way to discover bugs in software by providing <strong>randomised inputs</strong> to programs to find test cases that cause a crash</li>
+<li>
+<p><u>あなたは　どうしますか。</u></p>
+</li>
+<li>
+<p>おはよう　ございます。</p>
+</li>
+<li>
+<p>こんにちは。</p>
+</li>
+<li>
+<p>こんばんは。</p>
+</li>
+<li>
+<p>さようなら。</p>
+<p>じゃあ，また。</p>
+</li>
+<li>
+<p>ありがとうございます。</p>
+<p>いいえ。</p>
+</li>
+<li>
+<p>すみません。</p>
+<p>いいえ。</p>
+</li>
+<li>
+<p><u>おさきに　しつれいします。</u></p>
+<p><u>おつかれさまでした。</u></p>
+</li>
 </ul>
-<h3 id="goal">Goal</h3>
+<h3 id="2-もおいちどおねがいします">2. もおいちど　おねがいします</h3>
 <ul>
-<li>Find crashes</li>
-<li>Find abnormal behavior</li>
-<li>Find security vulnerabilities</li>
+<li>
+<p>いますか。</p>
+<p>はい，います。</p>
+<p>いいえ，いません。</p>
+<p>いいえ，まだです。</p>
+</li>
+<li>
+<p><u>じゅぎょうを　はじめます。</u></p>
+<p><u>じゅぎょを　おわります。</u></p>
+</li>
+<li>
+<p>わかりました。</p>
+<p>わかりません。</p>
+</li>
+<li>
+<p>もおいちど　おねがいします。</p>
+<p><u>もおすこし　ゆっくり　いって　ください。</u></p>
+</li>
+<li>
+<p>せんせえ，“きょうしつ”って　どういう　いみですが。</p>
+<p>えいご　“classroom”　ですよ。</p>
+</li>
+<li>
+<p>ちょっと　しつれいします。</p>
+</li>
+<li>
+<p>すみません。おくれます。</p>
+<p>やすみます。</p>
+</li>
 </ul>
-<h3 id="testing-variants">Testing variants</h3>
-<h4 id="positive-testing">Positive testing</h4>
-<ul>
-<li>Test <strong>features</strong></li>
-</ul>
-<h4 id="negative-testing">Negative testing</h4>
-<ul>
-<li>Test if the system does things it is not supposed to do</li>
-<li><strong>Fuzzing belongs to negative testing</strong></li>
-</ul>
-<h3 id="fuzzing-vs-random-testing">Fuzzing vs. Random testing</h3>
-<ul>
-<li>Random testing is a simple version of fuzzing</li>
-<li>Problem of random testing: <strong>Coverage</strong> increases slowly</li>
-<li>Fuzzing: try to generate test cases in a smarter, more efficient way</li>
-</ul>
-<h3 id="components">Components</h3>
-<h4 id="1-generator">1. Generator</h4>
-<h5 id="11-tasks">1.1 Tasks</h5>
-<ul>
-<li>Testing inputs to drive SUT</li>
-<li>Different approaches on how to generate the input</li>
-</ul>
-<h5 id="12-types">1.2 Types</h5>
-<h6 id="mutative-generator">Mutative generator</h6>
-<ul>
-<li>+ Start with a sample input</li>
-<li>+ Mutate a part of it</li>
-<li>+ Good for highly structured inputs</li>
-<li>- Less Intelligence</li>
-<li>- Less human effort to understand protocols &amp; interfaces</li>
-</ul>
-<h6 id="generative-generator">Generative generator</h6>
-<ul>
-<li>Generate the test cases from scratch</li>
-<li>Higher level of coverage</li>
-<li>More effort, if based on templates or grammars</li>
-</ul>
-<h5 id="13-different-production-approach">1.3 Different production approach</h5>
-<h6 id="oblivious-fuzzer">Oblivious fuzzer</h6>
-<ul>
-<li>Randomly mutate/generate data</li>
-<li>Similar to random testing</li>
-</ul>
-<h6 id="template-based">Template based</h6>
-<ul>
-<li>Provide an <strong>input template</strong></li>
-<li><strong>Modify/generate only those parts that are allowed by the template</strong></li>
-<li>Simple interface: <strong>minimal understanding of the structure accepted by SUT</strong></li>
-</ul>
-<h6 id="block-based">Block based</h6>
-<ul>
-<li>Data represented as <strong>nested data blocks of varying types</strong> as opposed to <strong>string sequences(template based)</strong></li>
-</ul>
-<h6 id="grammer-based">Grammer based</h6>
-<ul>
-<li>Covers some part of input language</li>
-<li><strong>Heuristic based</strong></li>
-<li>Better than complete ramdom(?)</li>
-</ul>
-<h6 id="protocol-fuzzers">Protocol fuzzers</h6>
-<ul>
-<li>Protocol description, not only grammar</li>
-</ul>
-<h4 id="2-delivery-machanism">2. Delivery machanism</h4>
-<ul>
-<li>Presents the output of the fuzz generator as input to the SUT</li>
-<li>i.e., file, mouse, etc.</li>
-</ul>
-<h4 id="3-monitoring-system">3. Monitoring system</h4>
-<ul>
-<li>Observing the SUT and detection of errors that arise as input is presented</li>
-</ul>
-<p>###</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2021-05-02&nbsp;
-                                </span>
+                <span>Updated on 2021-05-03</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://daijiabin.github.io/sft/" data-title="Software Fault Tolerance" data-hashtags="Kurse"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://daijiabin.github.io/sft/" data-hashtag="Kurse"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://daijiabin.github.io/sft/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://daijiabin.github.io/sft/" data-title="Software Fault Tolerance" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://daijiabin.github.io/sft/" data-title="Software Fault Tolerance"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://daijiabin.github.io/japanese/" data-title="Japanese" data-hashtags="Tapanese"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://daijiabin.github.io/japanese/" data-hashtag="Tapanese"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="https://daijiabin.github.io/japanese/"><i class="fab fa-linkedin fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://daijiabin.github.io/japanese/" data-title="Japanese" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://daijiabin.github.io/japanese/" data-title="Japanese"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/kurse/">Kurse</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/tapanese/">Tapanese</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/asise/" class="prev" rel="prev" title="ASiSE"><i class="fas fa-angle-left fa-fw"></i>ASiSE</a>
-            <a href="/japanese/" class="next" rel="next" title="Japanese">Japanese<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/sft/" class="prev" rel="prev" title="Software Fault Tolerance"><i class="fas fa-angle-left fa-fw"></i>Software Fault Tolerance</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
