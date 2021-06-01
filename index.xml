@@ -3,9 +3,23 @@
         <title>Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/</link>
         <description>About LoveIt Theme</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 May 2021 10:32:05 &#43;0200</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 08:58:27 &#43;0200</lastBuildDate>
             <atom:link href="https://daijiabin.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Programmierung</title>
+    <link>https://daijiabin.github.io/programmierung/</link>
+    <pubDate>Fri, 28 May 2021 08:58:27 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/programmierung/</guid>
+    <description><![CDATA[Programmierung, SoSe 2021 (Haskell)  To the Begin: The most important thing, is THOUGHT.  Grammatik   Function Definition, to do here
+  Branch in Haskell, to do here
+ Simple Format for 2-Branches    02. Komposite Typen   complex type
+type Triple = (Int, Int, Int)
+$\rarr$ addThree :: Triple -&gt; Int
+  List
+  [1,2,3,4] $\rarr$ [Int]
+  [] $\rarr$ [Int]]]></description>
+</item><item>
     <title>Mess Problems</title>
     <link>https://daijiabin.github.io/mess_problems/</link>
     <pubDate>Tue, 25 May 2021 10:32:05 &#43;0200</pubDate>
@@ -106,14 +120,5 @@ It is actually a concept of abstraction and encapsulation. For a given &ldquo;bo
   Merge Sort &amp; Quick Sort   Merge Sort
   Quick Sort
   Exercises on LeetCode   LeetCode 104. Maximum Depth of Binary Tree]]></description>
-</item><item>
-    <title>Algorithms: Binary Search</title>
-    <link>https://daijiabin.github.io/algorithms-binary-search/</link>
-    <pubDate>Sun, 07 Mar 2021 08:57:20 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://daijiabin.github.io/algorithms-binary-search/</guid>
-    <description><![CDATA[Algorithms 01 Highlight of BS  with the Judge-setence if we can transform a Problem from O(n) to O(n / 2)  4 Points   The Thought is to shrank Array nums into 2 Numbers -&gt; while-loop with start + 1 &lt; end
-  update mid -&gt; mid = start + (end - start) / 2
-  don&rsquo;t be lazy: 3 case -&gt; ==, &lt; , &gt;]]></description>
 </item></channel>
 </rss>
