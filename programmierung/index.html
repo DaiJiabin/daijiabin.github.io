@@ -43,7 +43,7 @@ $\rarr$ addThree :: Triple -&gt; Int
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/daijiabin.github.io\/programmierung\/"
-        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  791 ,
+        },"image": ["https:\/\/daijiabin.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1144 ,
         "url": "https:\/\/daijiabin.github.io\/programmierung\/","datePublished": "2021-05-28T08:58:27+02:00","dateModified": "2021-06-01T18:07:10+02:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "Dai Jiabin","logo": "https:\/\/daijiabin.github.io\/images\/avatar.png"},"author": {
@@ -97,8 +97,8 @@ $\rarr$ addThree :: Triple -&gt; Int
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Programmierung</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://www.github.com/DaiJiabin" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dai Jiabin</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-28">2021-05-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;791 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;<span id="/programmierung/" class="leancloud_visitors" data-flag-title="Programmierung">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-28">2021-05-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1144 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;<span id="/programmierung/" class="leancloud_visitors" data-flag-title="Programmierung">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -118,6 +118,7 @@ $\rarr$ addThree :: Triple -&gt; Int
             <li><a href="#tree">Tree</a></li>
           </ul>
         </li>
+        <li><a href="#05-strukturellen-induktion">05. Strukturellen Induktion</a></li>
       </ul>
     </li>
   </ul>
@@ -473,7 +474,127 @@ $\rarr$ addThree :: Triple -&gt; Int
   <span class="n">collapse</span> <span class="p">(</span><span class="kt">Node</span> <span class="n">n</span> <span class="n">t1</span> <span class="n">t2</span><span class="p">)</span> <span class="ow">=</span> <span class="n">collapse</span> <span class="n">t1</span> <span class="o">++</span> <span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">+</span> <span class="n">collapse</span> <span class="n">t2</span>
 </code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><h3 id="05-strukturellen-induktion">05. Strukturellen Induktion</h3>
+<ul>
+<li>
+<p>i.e.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-haskell" data-lang="haskell">  <span class="n">sumList</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="kt">Int</span>
+  <span class="n">sumList</span> <span class="kt">[]</span> <span class="ow">=</span> <span class="mi">0</span>
+  <span class="n">sumList</span> <span class="p">(</span><span class="n">x</span> <span class="kt">:</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">sumList</span> <span class="n">xs</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-haskell" data-lang="haskell">  <span class="n">double</span> <span class="ow">::</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span>
+  <span class="n">double</span> <span class="kt">[]</span> <span class="ow">=</span> <span class="kt">[]</span>
+  <span class="n">double</span> <span class="p">(</span><span class="n">x</span> <span class="kt">:</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="kt">:</span> <span class="n">double</span> <span class="n">xs</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Then please prove: sumList (double xs) = 2 * sumList xs</p>
+<ul>
+<li>
+<p>Prove:</p>
+<ol>
+<li>
+<p><strong>Induktionsanfang: xs = []</strong></p>
+<p>sumList (double xs)</p>
+<p>= sumList (double [])</p>
+<p>= sumList []</p>
+<p>= 0</p>
+<p>= 2 * 0</p>
+<p>= 2 * (sumList [])</p>
+<p>= 2 * (sumList xs)</p>
+</li>
+<li>
+<p><strong>Induktionsvoraussetzung</strong></p>
+<p>Sei xs' :: [Int]. Wir nehmen an, dass $P(xs')$ gilt.</p>
+</li>
+<li>
+<p><strong>Induktionsschritt</strong></p>
+<p>For xs = x : xs' with x :: Int</p>
+<p>sumList (double xs)</p>
+<p>= sumList (double(x : xs'))</p>
+<p>= sumList ((2 * x) : double xs')</p>
+<p>= (2 * x) + sumList (double xs')</p>
+<p>= (2 * x) + (2 * sunList xs')</p>
+<p>= 2 * (x + sumList xs')</p>
+<p>= 2 * sumList (x : xs')</p>
+<p>= 2 * sumList xs</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>25 min, the example of tree is unclear.</p>
+</li>
+<li>
+<p>i.e.2</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-haskell" data-lang="haskell">  <span class="n">map</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span>
+  <span class="n">map</span> <span class="n">f</span> <span class="kt">[]</span> <span class="ow">=</span> <span class="kt">[]</span>
+  <span class="n">map</span> <span class="n">f</span> <span class="p">(</span><span class="n">x</span> <span class="kt">:</span> <span class="n">xs</span><span class="p">)</span> <span class="ow">=</span> <span class="n">f</span> <span class="n">x</span> <span class="kt">:</span> <span class="n">map</span> <span class="n">f</span> <span class="n">xs</span>
+  <span class="n">datat</span> <span class="kt">Tree</span> <span class="ow">=</span> <span class="kt">Nil</span> <span class="o">|</span> <span class="kt">Node</span> <span class="n">a</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">a</span><span class="p">)</span> <span class="p">(</span><span class="kt">Tree</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-haskell" data-lang="haskell">  <span class="n">mapTree</span> <span class="ow">::</span> <span class="p">(</span><span class="n">a</span> <span class="ow">-&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="ow">-&gt;</span> <span class="kt">Tree</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="kt">Tree</span> <span class="n">a</span>
+  <span class="n">mapTree</span> <span class="n">f</span> <span class="kt">Nil</span> <span class="ow">=</span> <span class="kt">Nil</span>
+  <span class="n">mapTree</span> <span class="n">f</span> <span class="p">(</span><span class="kt">Node</span> <span class="n">x</span> <span class="n">t1</span> <span class="n">t2</span><span class="p">)</span> <span class="ow">=</span> <span class="kt">Node</span> <span class="p">(</span><span class="n">f</span> <span class="n">x</span><span class="p">)</span> <span class="p">(</span><span class="n">mapTree</span> <span class="n">f</span> <span class="n">t1</span><span class="p">)</span> <span class="p">(</span><span class="n">mapTree</span> <span class="n">f</span> <span class="n">t2</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-haskell" data-lang="haskell">  <span class="n">collapse</span> <span class="ow">::</span> <span class="kt">Tree</span> <span class="n">a</span> <span class="ow">-&gt;</span> <span class="p">[</span><span class="n">a</span><span class="p">]</span>
+  <span class="n">collapse</span> <span class="kt">Nil</span> <span class="ow">-&gt;</span> <span class="kt">[]</span>
+  <span class="n">collapse</span> <span class="p">(</span><span class="kt">Node</span> <span class="n">x</span> <span class="n">t1</span> <span class="n">t2</span><span class="p">)</span> <span class="ow">=</span> <span class="n">collapse</span> <span class="n">t1</span> <span class="o">++</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">++</span> <span class="n">collapse</span> <span class="n">t2</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Summary: Sei P:T -&gt; {0, 1} eine Eigenschaft des algebraischen Datentyps T. Wenn</p>
+<ul>
+<li>
+<p>(Induktionsanfang) für jeden Konstruktor D von T, für den kein Argumenttyp gleich T ist, dass Prädikat P gilt</p>
+</li>
+<li>
+<p>(Induktionsschritt) folgende Implikation für jeden k-stelligne Konstruktor C mit Ergebnistzp T mit k &gt;= 1 und alle Werte t1, &hellip; tk gilt: wenn P für jedes t1 vom Tyü T gilt, dann gilt P für (C t1 &hellip; tk).</p>
+</li>
+</ul>
+<p>Dann gilt P für jeden Wert von T</p>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
