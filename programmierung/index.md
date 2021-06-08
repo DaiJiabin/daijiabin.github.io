@@ -287,3 +287,8 @@
 
   - We care about `t1` and `t1`, because the function $P$ cares about the characteristics of __Tree__ instead of __Int__
 
+### 06. `lambda` Term
+
+1. Definition
+
+  $\sum$ is the set of Symbols, and $\sum \And X \equiv$
