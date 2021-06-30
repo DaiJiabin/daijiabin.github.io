@@ -3,7 +3,18 @@
         <title>Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/zh-cn/</link>
         <description>关于 LoveIt 主题</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 13 Mar 2021 11:22:24 &#43;0100</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 28 Jun 2021 15:22:36 &#43;0200</lastBuildDate>
             <atom:link href="https://daijiabin.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>Diary</title>
+    <link>https://daijiabin.github.io/zh-cn/diary/</link>
+    <pubDate>Mon, 28 Jun 2021 15:22:36 &#43;0200</pubDate>
+    <author>作者</author>
+    <guid>https://daijiabin.github.io/zh-cn/diary/</guid>
+    <description><![CDATA[Somehow, I wonna fly to the moon 28.06.2021   Suspection is sth good, suspection is sth bad.
+  I would doubt about the loyalty of others, but I know fucking clearly that they&rsquo;re not my life tasks.
+  It bothers.
+  Just be individual.
+  ]]></description>
+</item></channel>
 </rss>

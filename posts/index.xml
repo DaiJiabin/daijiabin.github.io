@@ -3,7 +3,14 @@
         <title>All Posts - Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/posts/</link>
         <description>All Posts | Jiabin&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 08:58:27 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 30 Jun 2021 22:07:37 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>FCDS</title>
+    <link>https://daijiabin.github.io/fcds/</link>
+    <pubDate>Wed, 30 Jun 2021 22:07:37 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/fcds/</guid>
+    <description><![CDATA[01. Synchronization ]]></description>
+</item><item>
     <title>Programmierung</title>
     <link>https://daijiabin.github.io/programmierung/</link>
     <pubDate>Fri, 28 May 2021 08:58:27 &#43;0200</pubDate>
@@ -67,7 +74,7 @@ It is actually a concept of abstraction and encapsulation. For a given &ldquo;bo
     <pubDate>Sun, 02 May 2021 09:13:09 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://daijiabin.github.io/asise/</guid>
-    <description><![CDATA[03. ADED What is ADED  A nalyse  role: existing technologies, backgrounds, problems   D esign  role: new technologies   E valuate  necessary for technical papers a technical thesis must be technical( achieve and demonstrate a technical result ) success factors have to be analyzed to know whether a result is really needed role: show why the new solution is superior; use success cretiria   D iffuse  by writing: a design pattern, a report by demonstrating a software prototype role: popularize the research results; demonstration for creating vision    Tasks for each    Analyse Design Evaluate(Role?]]></description>
+    <description><![CDATA[01. Managements 03. ADED What is ADED  A nalyse  role: existing technologies, backgrounds, problems   D esign  role: new technologies   E valuate  necessary for technical papers a technical thesis must be technical( achieve and demonstrate a technical result ) success factors have to be analyzed to know whether a result is really needed role: show why the new solution is superior; use success cretiria   D iffuse  by writing: a design pattern, a report by demonstrating a software prototype role: popularize the research results; demonstration for creating vision    Tasks for each    Analyse Design Evaluate(Role?]]></description>
 </item><item>
     <title>Git Learn</title>
     <link>https://daijiabin.github.io/git-learn/</link>
@@ -104,19 +111,5 @@ It is actually a concept of abstraction and encapsulation. For a given &ldquo;bo
   Input is a Set instead of a Sequence ( Longest Consecutive Sequence )
   4 Points   Defination of States
   Transform-Function]]></description>
-</item><item>
-    <title>Algorithms Devide and Conquer</title>
-    <link>https://daijiabin.github.io/algorithms-devide-and-conquer/</link>
-    <pubDate>Mon, 08 Mar 2021 08:13:23 &#43;0100</pubDate>
-    <author>Author</author>
-    <guid>https://daijiabin.github.io/algorithms-devide-and-conquer/</guid>
-    <description><![CDATA[Algorithms 02 Traverse vs. Divide &amp; Conquer   both Recursive
-  Result in Parameter vs. Result in return Value
-  Top-down vs. Bottom-up
-  Basic Usage   Merge Sort / Quick Sort
-  Almost 90% Binary Tree Problems
-  Merge Sort &amp; Quick Sort   Merge Sort
-  Quick Sort
-  Exercises on LeetCode   LeetCode 104. Maximum Depth of Binary Tree]]></description>
 </item></channel>
 </rss>

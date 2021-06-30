@@ -3,7 +3,14 @@
         <title>Kurse - Tag - Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/tags/kurse/</link>
         <description>Kurse - Tag - Jiabin&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 02 May 2021 15:50:34 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/tags/kurse/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 30 Jun 2021 22:07:37 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/tags/kurse/" rel="self" type="application/rss+xml" /><item>
+    <title>FCDS</title>
+    <link>https://daijiabin.github.io/fcds/</link>
+    <pubDate>Wed, 30 Jun 2021 22:07:37 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/fcds/</guid>
+    <description><![CDATA[01. Synchronization ]]></description>
+</item><item>
     <title>Software Fault Tolerance</title>
     <link>https://daijiabin.github.io/sft/</link>
     <pubDate>Sun, 02 May 2021 15:50:34 &#43;0200</pubDate>
@@ -16,7 +23,7 @@
     <pubDate>Sun, 02 May 2021 09:13:09 &#43;0200</pubDate>
     <author>Author</author>
     <guid>https://daijiabin.github.io/asise/</guid>
-    <description><![CDATA[03. ADED What is ADED  A nalyse  role: existing technologies, backgrounds, problems   D esign  role: new technologies   E valuate  necessary for technical papers a technical thesis must be technical( achieve and demonstrate a technical result ) success factors have to be analyzed to know whether a result is really needed role: show why the new solution is superior; use success cretiria   D iffuse  by writing: a design pattern, a report by demonstrating a software prototype role: popularize the research results; demonstration for creating vision    Tasks for each    Analyse Design Evaluate(Role?]]></description>
+    <description><![CDATA[01. Managements 03. ADED What is ADED  A nalyse  role: existing technologies, backgrounds, problems   D esign  role: new technologies   E valuate  necessary for technical papers a technical thesis must be technical( achieve and demonstrate a technical result ) success factors have to be analyzed to know whether a result is really needed role: show why the new solution is superior; use success cretiria   D iffuse  by writing: a design pattern, a report by demonstrating a software prototype role: popularize the research results; demonstration for creating vision    Tasks for each    Analyse Design Evaluate(Role?]]></description>
 </item><item>
     <title>Note2021</title>
     <link>https://daijiabin.github.io/note2021/</link>
