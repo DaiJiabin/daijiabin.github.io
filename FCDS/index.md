@@ -3,6 +3,8 @@
 
 ## 01. Synchronization
 
+### Overview
+
 ![Synchronization](/FCDS/Synchronization.png)
 
 ### Notes
