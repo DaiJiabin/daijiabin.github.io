@@ -4,3 +4,7 @@
 ## 01. Synchronization
 
 ![Synchronization](/FCDS/Synchronization.png)
+
+### Notes
+
+1. This is a test, to show this article.

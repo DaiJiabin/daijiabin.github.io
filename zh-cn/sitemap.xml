@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://daijiabin.github.io/zh-cn/diary/</loc><lastmod>2021-06-28T15:22:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://daijiabin.github.io/zh-cn/</loc><lastmod>2021-06-28T15:22:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://daijiabin.github.io/zh-cn/diary/</loc><lastmod>2021-06-30T22:10:09&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://daijiabin.github.io/zh-cn/</loc><lastmod>2021-06-30T22:10:09&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://daijiabin.github.io/"
@@ -16,7 +16,7 @@
                     hreflang="zh-cn"
                     href="https://daijiabin.github.io/zh-cn/"
                     /></url><url>
-            <loc>https://daijiabin.github.io/zh-cn/posts/</loc><lastmod>2021-06-28T15:22:36&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://daijiabin.github.io/zh-cn/posts/</loc><lastmod>2021-06-30T22:10:09&#43;02:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://daijiabin.github.io/posts/"
