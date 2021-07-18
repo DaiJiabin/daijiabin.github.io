@@ -3,7 +3,15 @@
         <title>All Posts - Jiabin&#39;s Blog</title>
         <link>https://daijiabin.github.io/posts/</link>
         <description>All Posts | Jiabin&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Jul 2021 16:25:48 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 18 Jul 2021 16:43:09 &#43;0200</lastBuildDate><atom:link href="https://daijiabin.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>BAS4 FCDS</title>
+    <link>https://daijiabin.github.io/bas4-fcds/</link>
+    <pubDate>Sun, 18 Jul 2021 16:43:09 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://daijiabin.github.io/bas4-fcds/</guid>
+    <description><![CDATA[01. Synchronization In this Chapter we will discuss Synchronization in detail. Mindmaps see below.
+Overview Notes  This is a test, to show this article.  ]]></description>
+</item><item>
     <title>Erinnerung</title>
     <link>https://daijiabin.github.io/erinnerung/</link>
     <pubDate>Sun, 18 Jul 2021 16:25:48 &#43;0200</pubDate>
@@ -13,14 +21,6 @@
 guten Tag!
 Ich muss mich zuerst für diese Email entschuldigen:( Weil seit ein paaren Tagen ich eine Freundin habe, möchte ich noch in Wundtstr.5, Zimmer 0731 bleiben und mich um sie kümmern (sie lebt auch hier).
 Das ist für mich aber eine süße Überraschung, allerdings habe ich Ihnen zuvor einen neuen Mietvertrag des Umzugs gesandt (der Anhang dieser Email).]]></description>
-</item><item>
-    <title>FCDS</title>
-    <link>https://daijiabin.github.io/fcds/</link>
-    <pubDate>Wed, 30 Jun 2021 22:07:37 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://daijiabin.github.io/fcds/</guid>
-    <description><![CDATA[01. Synchronization In this Chapter we will discuss Synchronization in detail. Mindmaps see below.
-Overview Notes  This is a test, to show this article.  ]]></description>
 </item><item>
     <title>Programmierung</title>
     <link>https://daijiabin.github.io/programmierung/</link>
